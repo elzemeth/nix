@@ -12,6 +12,8 @@
 
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nixpkgs-stable, nixvim, home-manager, ... }:
@@ -32,10 +34,12 @@
               inherit system;
               config.allowUnfree = true;
             };
+            inherit inputs;
           };
         
           home-manager.sharedModules = [
             nixvim.homeManagerModules.nixvim
+            inputs.spicetify-nix.homeManagerModules.default
           ];
         }
       ];

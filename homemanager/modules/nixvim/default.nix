@@ -21,7 +21,6 @@
       // (import ./plugins/oil.nix)
       // (import ./plugins/colorizer.nix)
       // (import ./plugins/luasnip/luasnip.nix)
-      // (import ./plugins/cmp_luasnip/cmp_luasnip.nix)
     );
 
     keymaps = []
