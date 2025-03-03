@@ -2,10 +2,11 @@
   homebrew = {
     enable = true;
     brews = [ "mas" ];
-    casks = [ "anydesk" "ghostty" "zen-browser" "godot" "inkscape" "visual-studio-code"]; 
+    casks = [ "anydesk" "ghostty" "zen-browser" "godot" "inkscape" "visual-studio-code" "libreoffice"]; 
     
     masApps = {
       Xcode = 497799835;
+      Swift-Playgrounds = 1496833156;
     };
   };
 }
