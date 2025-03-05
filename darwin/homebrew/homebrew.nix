@@ -1,8 +1,8 @@
 {
   homebrew = {
     enable = true;
-    brews = [ "mas" ];
-    casks = [ "anydesk" "ghostty" "zen-browser" "godot" "inkscape" "visual-studio-code" "libreoffice"]; 
+    brews = [ "mas" "libarchive" ];
+    casks = [ "anydesk" "ghostty" "zen-browser" "godot" "inkscape" "visual-studio-code" "libreoffice" "raylib"]; 
     
     masApps = {
       Xcode = 497799835;
