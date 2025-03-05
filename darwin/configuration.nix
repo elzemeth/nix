@@ -31,11 +31,6 @@
 	#Necessary for using flakes on this system.
 	nix.settings.experimental-features = "nix-command flakes";
 
-  nix.extraOptions = ''
-    trusted-users  = root hakan
-  '';
-
-
 	# Set Git commit hash for darwin-version.
 	system.configurationRevision = config.rev or config.dirtyRev or null;
 	
